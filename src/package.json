@@ -1,0 +1,10 @@
+{
+  "identity": {
+    "appName": "CloudUX-Action-Example"
+  },
+  "main": "index.js",
+  "avid": {
+    "format": "amd",
+    "autoload": true
+  }
+}

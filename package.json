@@ -1,0 +1,51 @@
+{
+  "name": "cloudux-action-example",
+  "version": "0.1.0",
+  "description": "Starter kit for UI developers in CloudUX",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node --inspect scripts/start.js",
+    "build": "webpack --config ./config/webpack.prod.config.js --display-error-details",
+    "lint-fix": "eslint --ext .jsx --ext .js --fix ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CloudUX",
+    "UI",
+    "Toolkit"
+  ],
+  "author": "Michał Oleszczuk <michal.oleszczuk@avid.com>",
+  "license": "See EULA or LICENDE in README.",
+  "dependencies": {
+    "autoprefixer": "7.2.5",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-decorators": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "cloudux-l10n": "1.0.0",
+    "compression-webpack-plugin": "1.1.3",
+    "copy-webpack-plugin": "4.3.1",
+    "css-loader": "0.28.8",
+    "express": "4.16.2",
+    "extract-text-webpack-plugin": "3.0.2",
+    "html-loader": "0.5.4",
+    "http-proxy-middleware": "0.17.4",
+    "identity-obj-proxy": "3.0.0",
+    "postcss-loader": "2.0.10",
+    "progress-bar-webpack-plugin": "1.10.0",
+    "request": "2.83.0",
+    "resolve-url-loader": "2.2.1",
+    "sass-loader": "6.0.6",
+    "spdy": "3.4.7",
+    "style-loader": "0.19.1",
+    "webpack": "3.10.0",
+    "webpack-merge": "4.1.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "3.0.0"
+  }
+}

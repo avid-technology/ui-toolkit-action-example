@@ -1,0 +1,18 @@
+{
+  "identity": {
+    "description": "My first Avid App",
+    "appID": "1",
+    "build": "1",
+    "version": "0.01"
+  },
+  "signing": {
+    "login": "",
+    "developerID": "",
+    "organization": "",
+    "privateKeyPath": ""
+  },
+  "connection": {
+    "hostIp": "vtl",
+    "hostPort": "8443"
+  }
+}
