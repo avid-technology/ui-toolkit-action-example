@@ -10,23 +10,23 @@ This example was created using MediaCentral Cloud UX Toolkit:
 
 Action can be found there:
 
-![Alt text](./screenshots/top-right-corner.png?raw=true "Right Corner")
+![Alt text](screenshots/toggleRightCor.png "Right Corner")
 
 Click to toggle actions:
 
-![Alt text](./screenshots/toggle-action.png?raw=true "Toggle")
+![Alt text](screenshots/toggleAction.png "Toggle")
 
 See action displayed:
 
-![Alt text](./screenshots/HelloAction.png?raw=true "Hello")
+![Alt text](screenshots/HelloAction.png "Hello")
 
 Action definition:
 
-![Alt text](./screenshots/action.png?raw=true "Hello")
+![Alt text](screenshots/action.png "Hello")
 
 Binding definition:
 
-![Alt text](./screenshots/binding.png?raw=true "Hello")
+![Alt text](screenshots/binding.png "Hello")
 
 ## Running the examples
 To run these examples you will need a running MediaCentral Cloud UX server running. 
