@@ -10,7 +10,7 @@ This example was created using MediaCentral Cloud UX Toolkit:
 
 Action can be found there:
 
-![Alt text](screenshots/toggleRightCor.png "Right Corner")
+![Alt text](screenshots/actionRightCor.png "Right Corner")
 
 Click to toggle actions:
 
@@ -18,7 +18,7 @@ Click to toggle actions:
 
 See action displayed:
 
-![Alt text](screenshots/HelloAction.png "Hello")
+![Alt text](screenshots/helloAction.png "Hello")
 
 Action definition:
 
