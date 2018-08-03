@@ -1,7 +1,6 @@
 {
   "identity": {
-    "description": "My first Avid App",
-    "appID": "1",
+    "description": "test",
     "build": "1",
     "version": "0.01"
   },
@@ -12,7 +11,8 @@
     "privateKeyPath": ""
   },
   "connection": {
-    "hostIp": "localhost",
-    "hostPort": "8443"
+    "hostIp": "10.42.24.56",
+    "hostPort": "",
+    "proxyPort": "8080"
   }
 }

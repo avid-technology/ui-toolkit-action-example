@@ -9,6 +9,9 @@ import AppEntry from './avid_api/entry/EntryConfig';
 import Action from './app/action';
 import Binding from './app/binding';
 
+const isAdminApp = appConfig.avid.hasOwnProperty('mode') && appConfig.avid.mode[0] === 'admin';
+const providing = isAdminApp ? 'adminApps' : 'apps';
+
 export const avid = [
     {
         name: `${appConfig['identity']['appName']}-view`,
