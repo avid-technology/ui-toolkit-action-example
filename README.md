@@ -20,25 +20,18 @@ See action displayed:
 
 ![Alt text](screenshots/helloAction.png "Hello")
 
-Action definition:
+Action [definition](src/app/action.js "Action"):
 
 ![Alt text](screenshots/action.png "Hello")
 
-Binding definition:
+Binding [definition](src/app/binding.js "Action"):
 
 ![Alt text](screenshots/binding.png "Hello")
 
 ## Running the examples
 To run these examples you will need a running MediaCentral Cloud UX server running. 
-Connection settings can be changed in [src/project.act](src/project.act)
 
-### Dependencies
-* [cloudux-l10n ](https://www.npmjs.com/package/cloudux-l10n)
-
-### MediaCentral Cloud UX Toolkit
-This example contains a basic action description and it's binding.
-
-Running:
-    
-    npm install
-    npm start
+**Running:**
+1. Change connections settings in [src/project.act](src/project.act)
+2. In CLI type **npm install**
+3. Then in CLI type **npm start**

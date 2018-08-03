@@ -1,3 +1,6 @@
+import actionTypes from './redux/actions/actionTypes';
+import {store} from '../store';
+
 const action = {
     id: 'user.action',
 
@@ -9,8 +12,8 @@ const action = {
         return true;
     },
 
-    handler({ selection, component }) {
-        alert('Hello from example Action')
+    handler({selection, component}) {
+        store.dispatch({type: actionTypes.EXAMPLE_ACTION, payload: true});
     },
 };
 

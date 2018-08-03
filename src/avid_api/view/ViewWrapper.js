@@ -2,6 +2,8 @@
  * Copyright 2017 by Avid Technology, Inc.
  */
 
+import ReactDOM from 'react-dom';
+
 import ApplicationContainer from '../../app/index';
 
 // Need to be bcs it is used in main App :
@@ -11,7 +13,9 @@ export default class ViewWrapper {
         return Promise.resolve(this.el);
     }
 
-    onInit() {
+    onInit(config) {
+        this.state = config.state;
+
         this.pane = new ApplicationContainer({
             contextCallback: function (context) {
                 this.trigger('contextChange', context);
@@ -20,10 +24,16 @@ export default class ViewWrapper {
     }
 
     onRender() {
-        this.el.appendChild(this.pane.returnElement());
+        this.pane.render(this.el);
     }
 
-    onDestroy(data) {}
+    onDestroy() {
+        ReactDOM.unmountComponentAtNode(this.el);
+    }
+
+    getState() {
+        return this.pane.store.getState();
+    }
 
     onRevalidate(data) {}
 
@@ -48,6 +58,8 @@ export default class ViewWrapper {
     getMinWidth() {return 50;}
 
     get publicScope() {
-        return {};
+        return {
+            getState: this.getState.bind(this),
+        };
     }
 }
