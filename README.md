@@ -30,7 +30,7 @@ Binding definition:
 
 ## Running the examples
 To run these examples you will need a running MediaCentral Cloud UX server running. 
-Connection settings can be changed in [src/project.act](src/project.act)
+Connection settings can be changed in [src/project.config.json](src/project.config.json)
 
 ### Dependencies
 * [cloudux-l10n ](https://www.npmjs.com/package/cloudux-l10n)

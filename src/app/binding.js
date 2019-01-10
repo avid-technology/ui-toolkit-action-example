@@ -2,11 +2,11 @@ import appConfig from '../package.json';
 
 export default {
     places: ['contextMenu', 'viewMenu'],
-    filter: `${appConfig['identity']['appName']}-view`,
+    filter: `${appConfig.identity.appName}-view`,
     defaults: {
         index: 600,
     },
     menuModelProvider: () => [
-        { actionId: 'user.action' }
+        { actionId: 'user.action' },
     ],
 };

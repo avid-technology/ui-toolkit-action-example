@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const action = {
     id: 'user.action',
 
@@ -10,7 +12,7 @@ const action = {
     },
 
     handler({ selection, component }) {
-        alert('Hello from example Action')
+        alert('Hello from example Action');
     },
 };
 

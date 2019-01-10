@@ -7,10 +7,10 @@ import ViewWrapper from './ViewWrapper';
 
 const ViewConfig = {
     config: {
-        menuName: appConfig['identity']['appName'],
+        menuName: appConfig.identity.appName,
         singleton: false,
         useLegacyStyles: false,
-        icon: `/plugins/${appConfig['identity']['appName']}/images/icon.svg`,
+        icon: `/plugins/${appConfig.identity.appName}/images/icon.svg`,
 
     },
     factory: () => {

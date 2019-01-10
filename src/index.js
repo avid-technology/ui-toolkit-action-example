@@ -11,12 +11,12 @@ import Binding from './app/binding';
 
 export const avid = [
     {
-        name: `${appConfig['identity']['appName']}-view`,
+        name: `${appConfig.identity.appName}-view`,
         provides: ['views'],
         create: () => ViewConfig,
     },
     {
-        name: `${appConfig['identity']['appName']}-view`,
+        name: `${appConfig.identity.appName}-view`,
         provides: ['theme'],
         create: () => ({
             key: 'dark',
@@ -24,7 +24,7 @@ export const avid = [
         }),
     },
     {
-        name: appConfig['identity']['appName'],
+        name: appConfig.identity.appName,
         provides: ['apps'],
         create: () => AppEntry,
     },
@@ -37,5 +37,5 @@ export const avid = [
         name: Action.id,
         provides: ['actionBindings'],
         create: () => Binding,
-    }
+    },
 ];

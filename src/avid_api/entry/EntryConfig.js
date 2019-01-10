@@ -4,6 +4,7 @@
 
 import appConfig from '../../package.json';
 import EntryWrapper from './EntryWrapper';
+import icon from '../../images/icon.json';
 
 export default {
     factory: (config) => {
@@ -27,14 +28,14 @@ export default {
         color: 'rgb(232, 108, 49)',
         unrenderOnHide: false,
         menu: {
-            view: `${appConfig['identity']['appName']}-view`,
-        }
+            view: `${appConfig.identity.appName}-view`,
+        },
     },
     menuIcon: {
         group: 200,
         orderInGroup: 202,
-        title: appConfig['identity']['appName'],
-        icon: `/plugins/${appConfig['identity']['appName']}/images/icon.svg`,
+        title: appConfig.identity.appName,
+        icon: icon.icon,
         gradient: ['#ba2f82', '#cf4c85'],
     },
 };
