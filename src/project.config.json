@@ -12,7 +12,7 @@
     "privateKeyPath": ""
   },
   "connection": {
-    "hostIp": "<you MediaCentral ip>",
+    "hostIp": "<your-mediacentral-cloudux-machine-address>",
     "hostPort": "",
     "proxyPort": "443"
   }
