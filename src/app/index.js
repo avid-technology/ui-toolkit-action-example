@@ -1,7 +1,7 @@
 /**
  * Copyright 2017 by Avid Technology, Inc.
  */
-import { getLocalization } from 'cloudux-l10n';
+import { getLocalization } from './localization';
 import l10nData from '../l10n/lang.en.json';
 
 export default class ApplicationContainer {
