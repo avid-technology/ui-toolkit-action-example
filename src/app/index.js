@@ -1,16 +1,15 @@
 /**
- * Copyright 2017 by Avid Technology, Inc.
+ * Copyright 2022 by Avid Technology, Inc.
  */
 import { getLocalization } from './localization';
 import l10nData from '../l10n/lang.en.json';
 
 export default class ApplicationContainer {
-    constructor() {
-        this.div = document.createElement('div');
-        this.div.innerHTML = getLocalization(l10nData)('example-plugin-message');
+    getTitle() {
+        return 'Your first AVID app title';
     }
 
-    returnElement() {
-        return this.div;
+    render(element) {
+        element.innerHTML = getLocalization(l10nData)('example-plugin-message');
     }
 }
